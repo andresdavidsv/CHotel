@@ -18,4 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('room', 'API\RoomController');
+Route::get('room/availability', 'API\RoomController@index');
+Route::post('room/reservation', 'API\RoomController@store');
+Route::put('room/reservation/{room}', 'API\RoomController@update');
+Route::delete('room/reservation/{room}', 'API\RoomController@destroy');

@@ -18,7 +18,7 @@ class CreateRoomsTable extends Migration
             $table->integer('type');
             $table->date('chekin');
             $table->date('chekout');
-            $table->boolean('state');
+            $table->boolean('status');
             $table->timestamps();
         });
     }
