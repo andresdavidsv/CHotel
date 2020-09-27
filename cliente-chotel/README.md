@@ -1,4 +1,4 @@
-# client-chotel
+# cliente-chotel
 
 ## Project setup
 ```
